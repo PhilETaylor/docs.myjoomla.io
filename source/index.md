@@ -38,6 +38,11 @@ curl "http://vel.myjoomla.com"
 
 ```json
 {
+  "timestamp": "1425675184",
+  "human": "Friday 6th March 2015"
+},
+data: [
+{
   "official_vel_link": "http://vel.joomla.org/live-vel/1493",
   "title": "myJoomla extension",
   "type": "RFI",
@@ -51,6 +56,7 @@ curl "http://vel.myjoomla.com"
   "developers_email": "assist@example.com",
   "response_url": ""
 }
+]
 ```
 
 The Joomla Vulnerable Extension List, is a public list published by Joomla.org or reported plugins, extensions, modules or templates from 3rd party developers that have known or resolved security issues with them.
@@ -62,6 +68,6 @@ myJoomla.io providers the _only_ public json interface that is updated and maint
 `License: GPL`
 
 <aside class="notice">
-This JSON is provided for free, dont abuse this by hammering it with massive of calls please. <br/>The official VEL list rarely changes. Be nice.
+This JSON is provided for free, don't abuse this by hammering it with massive of calls please. Be nice. Cache.
 </aside>
 
