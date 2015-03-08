@@ -37,6 +37,8 @@ curl "http://vel.myjoomla.com"
 > In the json is a data array that contains json objects like this
 
 ```json
+{ 
+"last_updated": 
 {
   "timestamp": "1425675184",
   "human": "Friday 6th March 2015"
@@ -57,6 +59,7 @@ data: [
   "response_url": ""
 }
 ]
+}
 ```
 
 The Joomla Vulnerable Extension List, is a public list published by Joomla.org or reported plugins, extensions, modules or templates from 3rd party developers that have known or resolved security issues with them.
