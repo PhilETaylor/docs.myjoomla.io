@@ -22,9 +22,6 @@ Any questions please email Phil direct at phil@phil-taylor.com
 
 # Vulnerable Extensions List
 
-> This is a public static json file
-
-
 ```php
 <?php
 $json = file_get_contents('http://vel.myjoomla.io/');
