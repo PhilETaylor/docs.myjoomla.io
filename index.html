@@ -13,7 +13,7 @@
 
       <script>
         $(function() {
-          setupLanguages(["curl","php"]);
+          setupLanguages(["shell","php"]);
         });
       </script>
   </head>
@@ -28,7 +28,7 @@
     <div class="tocify-wrapper">
       <img src="images/logo.png" />
         <div class="lang-selector">
-              <a href="#" data-language-name="curl">curl</a>
+              <a href="#" data-language-name="shell">shell</a>
               <a href="#" data-language-name="php">php</a>
         </div>
         <div class="search">
@@ -59,27 +59,25 @@
 </blockquote>
 <pre><code class="highlight php">$json = file_get_contents('http://vel.myjoomla.io/');
 </code></pre>
-<pre><code class="highlight plaintext">curl "http://vel.myjoomla.com"
+<pre><code class="highlight shell">curl <span class="s2">"http://vel.myjoomla.com"</span>
 </code></pre>
 
 <blockquote>
-<p>Make sure to replace <code class="prettyprint">meowmeowmeow</code> with your API key.</p>
-
 <p>In the json is a data array that contains json objects like this</p>
 </blockquote>
 <pre><code class="highlight json"><span class="p">{</span><span class="w">
-</span><span class="err">official_vel_link</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://vel.joomla.org/live-vel/1493-joomla-mac-gallery-1-5-and-below"</span><span class="p">,</span><span class="w">
-</span><span class="err">title</span><span class="p">:</span><span class="w"> </span><span class="s2">"Joomla Mac Gallery 1.5 and below"</span><span class="p">,</span><span class="w">
-</span><span class="err">type</span><span class="p">:</span><span class="w"> </span><span class="s2">"RFI"</span><span class="p">,</span><span class="w">
-</span><span class="err">published_date</span><span class="p">:</span><span class="w"> </span><span class="s2">"22/09/2014"</span><span class="p">,</span><span class="w">
-</span><span class="err">component_name</span><span class="p">:</span><span class="w"> </span><span class="s2">"Joomla Mac Gallery"</span><span class="p">,</span><span class="w">
-</span><span class="err">com_whatever</span><span class="p">:</span><span class="w"> </span><span class="s2">"com_macgallery"</span><span class="p">,</span><span class="w">
-</span><span class="err">version_effected</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.5"</span><span class="p">,</span><span class="w">
-</span><span class="err">version_effected_trend</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;"</span><span class="p">,</span><span class="w">
-</span><span class="err">developer_website</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.apptha.com"</span><span class="p">,</span><span class="w">
-</span><span class="err">extension_webpage</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.apptha.com/category/extension/joomla/joomla-photo-gallery"</span><span class="p">,</span><span class="w">
-</span><span class="err">developers_email</span><span class="p">:</span><span class="w"> </span><span class="s2">"assist@apptha.com"</span><span class="p">,</span><span class="w">
-</span><span class="err">response_url</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+  </span><span class="s2">"official_vel_link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://vel.joomla.org/live-vel/1493-joomla-mac-gallery-1-5-and-below"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Joomla Mac Gallery 1.5 and below"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RFI"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"published_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"22/09/2014"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"component_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Joomla Mac Gallery"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"com_whatever"</span><span class="p">:</span><span class="w"> </span><span class="s2">"com_macgallery"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"version_effected"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.5"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"version_effected_trend"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"developer_website"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.apptha.com"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"extension_webpage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.apptha.com/category/extension/joomla/joomla-photo-gallery"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"developers_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"assist@apptha.com"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"response_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 
@@ -98,7 +96,7 @@ This JSON is provided for free, dont abuse this by hammering it with massive of 
       </div>
       <div class="dark-box">
           <div class="lang-selector">
-                <a href="#" data-language-name="curl">curl</a>
+                <a href="#" data-language-name="shell">shell</a>
                 <a href="#" data-language-name="php">php</a>
           </div>
       </div>
