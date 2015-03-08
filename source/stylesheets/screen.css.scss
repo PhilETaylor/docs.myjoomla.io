@@ -91,6 +91,8 @@ html, body {
 
   // This is the logo at the top of the ToC
   &>img {
+    margin-top: 20px;
+    max-width: 220px;
     display: block;
   }
 
