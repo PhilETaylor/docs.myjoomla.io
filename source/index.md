@@ -26,6 +26,7 @@ Any questions please email Phil direct at phil@phil-taylor.com
 
 
 ```php
+<?php
 $json = file_get_contents('http://vel.myjoomla.io/');
 ```
 
@@ -37,17 +38,17 @@ curl "http://vel.myjoomla.com"
 
 ```json
 {
-  "official_vel_link": "http://vel.joomla.org/live-vel/1493-joomla-mac-gallery-1-5-and-below",
-  "title": "Joomla Mac Gallery 1.5 and below",
+  "official_vel_link": "http://vel.joomla.org/live-vel/1493",
+  "title": "myJoomla extension",
   "type": "RFI",
   "published_date": "22/09/2014",
-  "component_name": "Joomla Mac Gallery",
-  "com_whatever": "com_macgallery",
+  "component_name": "Joomla extension Gallery",
+  "com_whatever": "com_example",
   "version_effected": "1.5",
   "version_effected_trend": "<",
-  "developer_website": "https://www.apptha.com",
-  "extension_webpage": "https://www.apptha.com/category/extension/joomla/joomla-photo-gallery",
-  "developers_email": "assist@apptha.com",
+  "developer_website": "https://www.example.com",
+  "extension_webpage": "https://www.example.com/joomla-photo-example",
+  "developers_email": "assist@example.com",
   "response_url": ""
 }
 ```
@@ -61,6 +62,6 @@ myJoomla.io providers the _only_ public json interface that is updated and maint
 `License: GPL`
 
 <aside class="notice">
-This JSON is provided for free, dont abuse this by hammering it with massive of calls please. The official VEL list rarely changes. Be nice.
+This JSON is provided for free, dont abuse this by hammering it with massive of calls please. <br/>The official VEL list rarely changes. Be nice.
 </aside>
 
