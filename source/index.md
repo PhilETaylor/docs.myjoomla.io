@@ -24,16 +24,9 @@ Any questions please email Phil direct at phil@phil-taylor.com
 
 > This is a public static json file
 
-```ruby
-require 'kittn'
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
+```php
+$json = file_get_contents('http://vel.myjoomla.io/');
 ```
 
 ```curl
@@ -42,13 +35,34 @@ curl "http://vel.myjoomla.com"
 
 > Make sure to replace `meowmeowmeow` with your API key.
 
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
+> In the json is a data array that contains json objects like this
 
-Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
+```json
+{
+official_vel_link: "http://vel.joomla.org/live-vel/1493-joomla-mac-gallery-1-5-and-below",
+title: "Joomla Mac Gallery 1.5 and below",
+type: "RFI",
+published_date: "22/09/2014",
+component_name: "Joomla Mac Gallery",
+com_whatever: "com_macgallery",
+version_effected: "1.5",
+version_effected_trend: "<",
+developer_website: "https://www.apptha.com",
+extension_webpage: "https://www.apptha.com/category/extension/joomla/joomla-photo-gallery",
+developers_email: "assist@apptha.com",
+response_url: ""
+}
+```
 
-`Authorization: meowmeowmeow`
+The Joomla Vulnerable Extension List, is a public list published by Joomla.org or reported plugins, extensions, modules or templates from 3rd party developers that have known or resolved security issues with them.
+
+At the time of writing there is no practical way of querying this data as its published in such a bad state (individual Joomla content items) on the official site.
+
+myJoomla.io providers the _only_ public json interface that is updated and maintained of this data. 
+
+`License: GPL`
 
 <aside class="notice">
-You must replace `meowmeowmeow` with your personal API key.
+This JSON is provided for free, dont abuse this by hammering it with massive of calls please. The official VEL list rarely changes. Be nice.
 </aside>
 
