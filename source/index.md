@@ -38,27 +38,28 @@ curl "http://vel.myjoomla.com"
 
 ```json
 { 
-"last_updated": 
-{
-  "timestamp": "1425675184",
-  "human": "Friday 6th March 2015"
-},
-data: [
-{
-  "official_vel_link": "http://vel.joomla.org/live-vel/1493",
-  "title": "myJoomla extension",
-  "type": "RFI",
-  "published_date": "22/09/2014",
-  "component_name": "Joomla extension Gallery",
-  "com_whatever": "com_example",
-  "version_effected": "1.5",
-  "version_effected_trend": "<",
-  "developer_website": "https://www.example.com",
-  "extension_webpage": "https://www.example.com/joomla-photo-example",
-  "developers_email": "assist@example.com",
-  "response_url": ""
-}
-]
+  "last_updated": 
+  {
+    "timestamp": "1425675184",
+    "human": "Friday 6th March 2015"
+  },
+  "data": 
+  [
+    {
+      "official_vel_link": "http://vel.joomla.org/live-vel/1493",
+      "title": "myJoomla extension",
+      "type": "RFI",
+      "published_date": "22/09/2014",
+      "component_name": "Joomla extension Gallery",
+      "com_whatever": "com_example",
+      "version_effected": "1.5",
+      "version_effected_trend": "<",
+      "developer_website": "https://www.example.com",
+      "extension_webpage": "https://www.example.com/joomla-example",
+     "developers_email": "assist@example.com",
+      "response_url": ""
+    }
+  ]
 }
 ```
 
