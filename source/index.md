@@ -2,7 +2,7 @@
 title: myJoomla.io API Reference
 
 language_tabs:
-  - curl
+  - shell
   - php
   
 
@@ -29,28 +29,26 @@ Any questions please email Phil direct at phil@phil-taylor.com
 $json = file_get_contents('http://vel.myjoomla.io/');
 ```
 
-```curl
+```shell
 curl "http://vel.myjoomla.com"
 ```
-
-> Make sure to replace `meowmeowmeow` with your API key.
 
 > In the json is a data array that contains json objects like this
 
 ```json
 {
-official_vel_link: "http://vel.joomla.org/live-vel/1493-joomla-mac-gallery-1-5-and-below",
-title: "Joomla Mac Gallery 1.5 and below",
-type: "RFI",
-published_date: "22/09/2014",
-component_name: "Joomla Mac Gallery",
-com_whatever: "com_macgallery",
-version_effected: "1.5",
-version_effected_trend: "<",
-developer_website: "https://www.apptha.com",
-extension_webpage: "https://www.apptha.com/category/extension/joomla/joomla-photo-gallery",
-developers_email: "assist@apptha.com",
-response_url: ""
+  "official_vel_link": "http://vel.joomla.org/live-vel/1493-joomla-mac-gallery-1-5-and-below",
+  "title": "Joomla Mac Gallery 1.5 and below",
+  "type": "RFI",
+  "published_date": "22/09/2014",
+  "component_name": "Joomla Mac Gallery",
+  "com_whatever": "com_macgallery",
+  "version_effected": "1.5",
+  "version_effected_trend": "<",
+  "developer_website": "https://www.apptha.com",
+  "extension_webpage": "https://www.apptha.com/category/extension/joomla/joomla-photo-gallery",
+  "developers_email": "assist@apptha.com",
+  "response_url": ""
 }
 ```
 
