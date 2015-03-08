@@ -57,7 +57,8 @@
 <blockquote>
 <p>This is a public static json file</p>
 </blockquote>
-<pre><code class="highlight php">$json = file_get_contents('http://vel.myjoomla.io/');
+<pre><code class="highlight php"><span class="cp">&lt;?php</span>
+<span class="nv">$json</span> <span class="o">=</span> <span class="nb">file_get_contents</span><span class="p">(</span><span class="s1">'http://vel.myjoomla.io/'</span><span class="p">);</span>
 </code></pre>
 <pre><code class="highlight shell">curl <span class="s2">"http://vel.myjoomla.com"</span>
 </code></pre>
@@ -66,17 +67,17 @@
 <p>In the json is a data array that contains json objects like this</p>
 </blockquote>
 <pre><code class="highlight json"><span class="p">{</span><span class="w">
-  </span><span class="s2">"official_vel_link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://vel.joomla.org/live-vel/1493-joomla-mac-gallery-1-5-and-below"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Joomla Mac Gallery 1.5 and below"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"official_vel_link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://vel.joomla.org/live-vel/1493"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"myJoomla extension"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RFI"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"published_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"22/09/2014"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"component_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Joomla Mac Gallery"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"com_whatever"</span><span class="p">:</span><span class="w"> </span><span class="s2">"com_macgallery"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"component_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Joomla extension Gallery"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"com_whatever"</span><span class="p">:</span><span class="w"> </span><span class="s2">"com_example"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"version_effected"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.5"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"version_effected_trend"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"developer_website"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.apptha.com"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"extension_webpage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.apptha.com/category/extension/joomla/joomla-photo-gallery"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"developers_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"assist@apptha.com"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"developer_website"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.example.com"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"extension_webpage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.example.com/joomla-photo-example"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"developers_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"assist@example.com"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"response_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
@@ -90,7 +91,7 @@
 <p><code class="prettyprint">License: GPL</code></p>
 
 <aside class="notice">
-This JSON is provided for free, dont abuse this by hammering it with massive of calls please. The official VEL list rarely changes. Be nice.
+This JSON is provided for free, dont abuse this by hammering it with massive of calls please. <br/>The official VEL list rarely changes. Be nice.
 </aside>
 
       </div>
