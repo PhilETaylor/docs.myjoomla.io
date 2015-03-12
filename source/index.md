@@ -53,14 +53,14 @@ curl "http://vel.myjoomla.com"
       "version_effected_trend": "<",
       "developer_website": "https://www.example.com",
       "extension_webpage": "https://www.example.com/joomla-example",
-     "developers_email": "assist@example.com",
+      "developers_email": "assist@example.com",
       "response_url": ""
     }
   ]
 }
 ```
 
-The Joomla Vulnerable Extension List, is a public list published by Joomla.org or reported plugins, extensions, modules or templates from 3rd party developers that have known or resolved security issues with them.
+The Joomla Vulnerable Extension List, is a public list published by Joomla.org of reported plugins, extensions, modules or templates from 3rd party developers that have known or resolved security issues with them.
 
 At the time of writing there is no practical way of querying this data as its published in such a bad state (individual Joomla content items) on the official site.
 
