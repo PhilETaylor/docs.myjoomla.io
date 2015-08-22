@@ -28,7 +28,7 @@ $json = file_get_contents('http://vel.myjoomla.io/');
 ```
 
 ```shell
-curl "http://vel.myjoomla.com"
+curl "http://vel.myjoomla.io"
 ```
 
 > In the json is a data array that contains json objects like this
@@ -64,7 +64,7 @@ The Joomla Vulnerable Extension List, is a public list published by Joomla.org o
 
 At the time of writing there is no practical way of querying this data as its published in such a bad state (individual Joomla content items) on the official site.
 
-myJoomla.io providers the _only_ public json interface that is updated and maintained of this data. 
+myJoomla.io provides the _only_ public json interface that is updated and maintained of this data. 
 
 `License: GPL`
 
